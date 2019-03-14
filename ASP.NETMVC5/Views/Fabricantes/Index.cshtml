@@ -62,7 +62,9 @@
  <script src="@Url.Content("~/Scripts/DataTables/jquery.dataTables.js")"></script>
  <script src="@Url.Content("~/Scripts/DataTables/dataTables.bootstrap.js")"></script>
  <script type="text/javascript">
-    $(document).ready(function () {
+     $(document).ready(function () {
+         $('li').removeClass("active");
+         $('#liFabricantes').addClass("active");
         $('.table').dataTable({
             "order": [[1, "asc"]]
         });

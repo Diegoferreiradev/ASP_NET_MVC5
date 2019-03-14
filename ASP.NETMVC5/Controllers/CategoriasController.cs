@@ -105,6 +105,7 @@ namespace ASP.NETMVC5.Controllers
             Categoria categoria = context.Categorias.Find(id);
             context.Categorias.Remove(categoria);
             context.SaveChanges();
+            TempData["Mensagem"] = "Categoria " + categoria.Nome.ToUpper() + " foi removido!";
             return RedirectToAction("Index");
         }
     }
