@@ -1,4 +1,5 @@
-﻿using ASP.NETMVC5.Models;
+﻿using ASP.NETMVC5.Modelo.Cadastros;
+using ASP.NETMVC5.Modelo.Tabelas;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

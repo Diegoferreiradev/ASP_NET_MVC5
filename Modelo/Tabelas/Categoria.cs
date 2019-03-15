@@ -1,13 +1,14 @@
-﻿using System;
+﻿using ASP.NETMVC5.Modelo.Cadastros;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ASP.NETMVC5.Models
+namespace ASP.NETMVC5.Modelo.Tabelas
 {
-    public class Fabricante
+    public class Categoria
     {
-        public long FabricanteId { get; set; }
+        public long CategoriaId { get; set; }
         public string Nome { get; set; }
 
         public virtual ICollection<Produto> Produtos { get; set; }

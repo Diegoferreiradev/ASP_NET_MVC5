@@ -1,5 +1,5 @@
 ﻿using ASP.NETMVC5.Contexts;
-using ASP.NETMVC5.Models;
+using ASP.NETMVC5.Modelo.Cadastros;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
