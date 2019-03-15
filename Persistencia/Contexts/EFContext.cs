@@ -3,16 +3,23 @@ using ASP.NETMVC5.Modelo.Tabelas;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Web;
 
-namespace ASP.NETMVC5.Contexts
+namespace ASP.NETMVC5.Persistencia.Contexts
 {
     public class EFContext : DbContext
     {
         public EFContext() : base("Asp_Net_MVC_CS")
         {
             Database.SetInitializer<EFContext>(new DropCreateDatabaseIfModelChanges<EFContext>());
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
         public DbSet<Categoria> Categorias { get; set; }
