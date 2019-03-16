@@ -1,10 +1,10 @@
-﻿using ASP.NETMVC5.Modelo.Cadastros;
+﻿using Modelo.Cadastros;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ASP.NETMVC5.Modelo.Tabelas
+namespace Modelo.Tabelas
 {
     public class Categoria
     {

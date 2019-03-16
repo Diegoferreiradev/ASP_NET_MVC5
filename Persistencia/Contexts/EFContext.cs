@@ -1,19 +1,16 @@
-﻿using ASP.NETMVC5.Modelo.Cadastros;
-using ASP.NETMVC5.Modelo.Tabelas;
-using System;
-using System.Collections.Generic;
+﻿using Modelo.Cadastros;
+using Modelo.Tabelas;
+using Persistencia.Migrations;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using System.Linq;
-using System.Web;
 
-namespace ASP.NETMVC5.Persistencia.Contexts
+namespace Persistencia.Contexts
 {
     public class EFContext : DbContext
     {
         public EFContext() : base("Asp_Net_MVC_CS")
         {
-            Database.SetInitializer<EFContext>(new DropCreateDatabaseIfModelChanges<EFContext>());
+            Database.SetInitializer<EFContext>(new MigrateDatabaseToLatestVersion<EFContext, Configuration>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

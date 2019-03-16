@@ -1,11 +1,7 @@
-﻿using ASP.NETMVC5.Modelo.Cadastros;
-using ASP.NETMVC5.Persistencia.Contexts;
-using System;
-using System.Collections.Generic;
+﻿using Modelo.Cadastros;
+using Persistencia.Contexts;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Persistencia.DAL.Cadastros
 {
@@ -16,14 +12,12 @@ namespace Persistencia.DAL.Cadastros
 
         public IQueryable ObterProdutosClassificadosPorNome()
         {
-            return context.Produtos.Include(c => c.Categoria)
-                  .Include(f => f.Fabricante).OrderBy(n => n.Nome);
+            return context.Produtos.Include(c => c.Categoria).Include(f => f.Fabricante).OrderBy(n => n.Nome);
         }
 
         public Produto ObterProdutoPorId(long id)
         {
-            return context.Produtos.Where(p => p.ProdutoId == id)
-                   .Include(c => c.Categoria).Include(f => f.Nome).First();
+            return context.Produtos.Where(p => p.ProdutoId == id).Include(c => c.Categoria).Include(f => f.Fabricante).First();
         }
 
         public void GravarProduto(Produto produto)

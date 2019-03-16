@@ -1,4 +1,4 @@
-﻿using ASP.NETMVC5.Modelo.Tabelas;
+﻿using Modelo.Tabelas;
 using Persistencia.DAL.Tabelas;
 using System.Linq;
 

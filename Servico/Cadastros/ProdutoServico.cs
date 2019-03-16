@@ -1,4 +1,4 @@
-﻿using ASP.NETMVC5.Modelo.Cadastros;
+﻿using Modelo.Cadastros;
 using Persistencia.DAL.Cadastros;
 using System.Linq;
 

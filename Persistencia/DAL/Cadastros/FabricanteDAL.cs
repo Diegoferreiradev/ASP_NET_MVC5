@@ -1,10 +1,6 @@
-﻿using ASP.NETMVC5.Modelo.Cadastros;
-using ASP.NETMVC5.Persistencia.Contexts;
-using System;
-using System.Collections.Generic;
+﻿using Modelo.Cadastros;
+using Persistencia.Contexts;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Persistencia.DAL.Cadastros
 {

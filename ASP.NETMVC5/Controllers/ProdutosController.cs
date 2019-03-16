@@ -1,12 +1,7 @@
-﻿using ASP.NETMVC5.Modelo.Cadastros;
+﻿using Modelo.Cadastros;
 using Servico.Cadastros;
 using Servico.Tabelas;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 
 namespace ASP.NETMVC5.Controllers
@@ -65,6 +60,7 @@ namespace ASP.NETMVC5.Controllers
                     produtoServico.GravarProduto(produto);
                     return RedirectToAction("Index");
                 }
+                PopularViewBag(produto);
                 return View(produto);
             }
             catch 
