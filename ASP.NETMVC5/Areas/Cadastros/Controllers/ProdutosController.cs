@@ -4,7 +4,7 @@ using Servico.Tabelas;
 using System.Net;
 using System.Web.Mvc;
 
-namespace ASP.NETMVC5.Controllers
+namespace ASP.NETMVC5.Areas.Cadastros.Controllers
 {
     public class ProdutosController : Controller
     {

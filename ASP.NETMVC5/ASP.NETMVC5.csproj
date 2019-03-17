@@ -207,7 +207,6 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\DataTables\css\mixins.scss" />
     <Content Include="Content\DataTables\css\common.scss" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
@@ -264,30 +263,52 @@
     <Content Include="Scripts\DataTables\responsive.foundation.min.js" />
     <Content Include="Scripts\DataTables\responsive.jqueryui.js" />
     <Content Include="Scripts\DataTables\responsive.jqueryui.min.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Areas\Tabelas\Views\web.config" />
+    <Content Include="Areas\Cadastros\Views\web.config" />
+    <None Include="Scripts\jquery-1.11.3.intellisense.js" />
+    <Content Include="Scripts\jquery-1.11.3.js" />
+    <Content Include="Scripts\jquery-1.11.3.min.js" />
+    <Content Include="Scripts\jquery-1.11.3.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\external\jquery\jquery.js" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\images\ui-icons_444444_256x240.png" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\images\ui-icons_555555_256x240.png" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\images\ui-icons_777620_256x240.png" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\images\ui-icons_777777_256x240.png" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\index.html" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\jquery-ui.css" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\jquery-ui.min.css" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\jquery-ui.structure.css" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\jquery-ui.structure.min.css" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\jquery-ui.theme.css" />
+    <Content Include="Scripts\jquery-ui-1.11.4.custom\jquery-ui.theme.min.css" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Web.config" />
-    <Content Include="Views\Categorias\Create.cshtml" />
-    <Content Include="Views\Categorias\Edit.cshtml" />
-    <Content Include="Views\Categorias\Details.cshtml" />
-    <Content Include="Views\Categorias\Delete.cshtml" />
-    <Content Include="Views\Fabricantes\Index.cshtml" />
-    <Content Include="Views\Fabricantes\Create.cshtml" />
-    <Content Include="Views\Fabricantes\Edit.cshtml" />
-    <Content Include="Views\Fabricantes\Details.cshtml" />
-    <Content Include="Views\Fabricantes\Delete.cshtml" />
+    <Content Include="Areas\Tabelas\Views\Categorias\Create.cshtml" />
+    <Content Include="Areas\Tabelas\Views\Categorias\Edit.cshtml" />
+    <Content Include="Areas\Tabelas\Views\Categorias\Details.cshtml" />
+    <Content Include="Areas\Tabelas\Views\Categorias\Delete.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Fabricantes\Index.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Fabricantes\Create.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Fabricantes\Edit.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Fabricantes\Details.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Fabricantes\Delete.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CategoriasController.cs" />
-    <Compile Include="Controllers\FabricantesController.cs" />
-    <Compile Include="Controllers\ProdutosController.cs" />
+    <Compile Include="Areas\Cadastros\CadastrosAreaRegistration.cs" />
+    <Compile Include="Areas\Tabelas\TabelasAreaRegistration.cs" />
+    <Compile Include="Areas\Tabelas\Controllers\CategoriasController.cs" />
+    <Compile Include="Areas\Cadastros\Controllers\FabricantesController.cs" />
+    <Compile Include="Areas\Cadastros\Controllers\ProdutosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -296,16 +317,15 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
-    <Content Include="Views\Categorias\Index.cshtml" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Produtos\Index.cshtml" />
-    <Content Include="Views\Produtos\Create.cshtml" />
-    <Content Include="Views\Produtos\Edit.cshtml" />
-    <Content Include="Views\Produtos\Details.cshtml" />
-    <Content Include="Views\Produtos\Delete.cshtml" />
-    <Content Include="Views\Produtos\_PorFabricante.cshtml" />
-    <Content Include="Views\Produtos\_PartialDetailsContentPanel.cshtml" />
-    <Content Include="Views\Produtos\_PartialEditContentPanel.cshtml" />
+    <Content Include="Areas\Tabelas\Views\Categorias\Index.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\Index.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\Create.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\Edit.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\Details.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\Delete.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\_PorFabricante.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\_PartialDetailsContentPanel.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\_PartialEditContentPanel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -315,6 +335,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Cadastros\Models\" />
+    <Folder Include="Areas\Cadastros\Views\Shared\" />
+    <Folder Include="Areas\Tabelas\Models\" />
+    <Folder Include="Areas\Tabelas\Views\Shared\" />
+    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

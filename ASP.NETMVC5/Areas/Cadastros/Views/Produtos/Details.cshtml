@@ -11,7 +11,7 @@
     </div>
     <div class="panel-body">
 
-        @Html.Partial("~/Views/Produtos/_PartialDetailsContentPanel.cshtml", Model)
+        @Html.Partial("~/Areas/Cadastros/Views/Produtos/_PartialDetailsContentPanel.cshtml", Model)
 
         <div class="panel-footer panel-info">
             @Html.ActionLink("Editar", "Edit", new { id = Model.ProdutoId }, new { @class = "btn btn-info" })
